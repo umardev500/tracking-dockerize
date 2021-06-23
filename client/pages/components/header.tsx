@@ -51,8 +51,8 @@ const Header = (): JSX.Element => {
 
             <div className="hidden lg:block">
               <div className="ml-10 flex items-center space-x-4">
-                <Link href="/">
-                  <a href="/" className="text-gray-600 hover:text-black font-roboto px-2">
+                <Link href="/tracking">
+                  <a href="/tracking" className="text-gray-600 hover:text-black font-roboto px-2">
                     Home
                   </a>
                 </Link>
