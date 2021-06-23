@@ -93,8 +93,8 @@ const Header = (): JSX.Element => {
         {isOpen ? (
           <div className="lg:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <Link href="/">
-                <a href="/" className="hover:bg-gray-100 text-gray-700 block px-3 py-2 rounded-md text-base font-medium font-roboto">
+              <Link href="/tracking">
+                <a href="/tracking" className="hover:bg-gray-100 text-gray-700 block px-3 py-2 rounded-md text-base font-medium font-roboto">
                   Home
                 </a>
               </Link>
