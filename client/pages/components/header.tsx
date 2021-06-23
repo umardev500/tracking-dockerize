@@ -56,12 +56,12 @@ const Header = (): JSX.Element => {
                     Home
                   </a>
                 </Link>
-                <Link href="/tracking/cek-resi">
+                <Link href="/cek-resi">
                   <a href="/tracking/cek-resi" className="text-gray-600 hover:text-black font-roboto px-2">
                     Cek resi
                   </a>
                 </Link>
-                <Link href="/tracking/cek-ongkir">
+                <Link href="/cek-ongkir">
                   <a href="/tracking/cek-ongkir" className="text-gray-600 hover:text-black font-roboto px-2">
                     Cek ongkir
                   </a>
@@ -70,7 +70,7 @@ const Header = (): JSX.Element => {
                   Contact
                 </a>
                 {isLogin ? (
-                  <Link href="/tracking/auth/logout">
+                  <Link href="/auth/logout">
                     <a href="/tracking/auth/logout" onClick={handleLogout} className="text-gray-600 hover:text-black font-roboto px-2">
                       Logout
                     </a>
@@ -98,12 +98,12 @@ const Header = (): JSX.Element => {
                   Home
                 </a>
               </Link>
-              <Link href="/tracking/cek-resi">
+              <Link href="/cek-resi">
                 <a href="/tracking/cek-resi" className="hover:bg-gray-100 text-gray-700 block px-3 py-2 rounded-md text-base font-medium font-roboto">
                   Cek resi
                 </a>
               </Link>
-              <Link href="/tracking/cek-ongkir">
+              <Link href="/cek-ongkir">
                 <a href="/tracking/cek-ongkir" className="hover:bg-gray-100 text-gray-700 block px-3 py-2 rounded-md text-base font-medium font-roboto">
                   Cek ongkir
                 </a>
@@ -112,7 +112,7 @@ const Header = (): JSX.Element => {
                 Contact
               </a>
               {isLogin ? (
-                <Link href="/tracking/auth/logout">
+                <Link href="/auth/logout">
                   <a href="#contact" onClick={handleLogout} className="hover:bg-gray-100 text-gray-700 block px-3 py-2 rounded-md text-base font-medium font-roboto">
                     Logout
                   </a>
