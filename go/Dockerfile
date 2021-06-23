@@ -1,8 +1,11 @@
 FROM golang:alpine
 
-WORKDIR /usr/app
-COPY ./ ./
-RUN go mod tidy
-RUN ls
-EXPOSE 5000
+RUN mkdir /app
 
+ADD . /app
+
+WORKDIR /app
+
+RUN go build -o main .
+
+CMD ["/app/main"]
