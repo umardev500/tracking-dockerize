@@ -51,7 +51,7 @@ const Header = (): JSX.Element => {
 
             <div className="hidden lg:block">
               <div className="ml-10 flex items-center space-x-4">
-                <Link href="/tracking">
+                <Link href="/">
                   <a href="/tracking" className="text-gray-600 hover:text-black font-roboto px-2">
                     Home
                   </a>
@@ -93,7 +93,7 @@ const Header = (): JSX.Element => {
         {isOpen ? (
           <div className="lg:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <Link href="/tracking">
+              <Link href="/">
                 <a href="/tracking" className="hover:bg-gray-100 text-gray-700 block px-3 py-2 rounded-md text-base font-medium font-roboto">
                   Home
                 </a>
