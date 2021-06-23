@@ -2,7 +2,6 @@ package main
 
 import (
     "fmt"
-    "os"
 
     "github.com/umardevid/go-resi-ongkir/entity"
     "github.com/umardevid/go-resi-ongkir/models"
@@ -11,8 +10,8 @@ import (
 )
 
 func main() {
-    var dsn = os.Getenv("DSN")
-    // dsn := "server:hello@tcp(localhost)/waybill_cost?charset=utf8mb4&parseTime=True&loc=Local"
+    // var dsn = os.Getenv("DSN")
+    dsn := "server:hello@tcp(db:3306)/waybill_cost?charset=utf8mb4&parseTime=True&loc=Local"
     db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
     if err != nil {
         fmt.Println(err)
