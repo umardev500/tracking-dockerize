@@ -4,6 +4,8 @@ WORKDIR /usr/app
 COPY ./ ./
 RUN go mod tidy
 RUN ls
-RUN start.sh
+ADD start.sh ./start.sh
 
 EXPOSE 5000
+CMD [./start]
+
