@@ -1,4 +1,4 @@
-#!/bin/ash
+#!/bin/bash
 
 export PORT=":8000" # you can change this port
 export RAJAONGKIRKEY="553c7982c1e8205443b4ad8d584e399e"
