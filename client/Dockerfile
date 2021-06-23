@@ -7,6 +7,6 @@ COPY ./package*.json ./
 COPY ./ ./
 RUN yarn install
 RUN yarn build
-EXPOSE 5000
+EXPOSE 3000
 USER node
 CMD [ "pm2-runtime", "npm", "--", "start" ]
