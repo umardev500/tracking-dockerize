@@ -1,4 +1,4 @@
-package migration
+package main
 
 import (
     "fmt"
@@ -10,7 +10,7 @@ import (
     "gorm.io/gorm"
 )
 
-func Migrasi() {
+func main() {
     var dsn = os.Getenv("DSN")
     // dsn := "server:hello@tcp(localhost)/waybill_cost?charset=utf8mb4&parseTime=True&loc=Local"
     db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
