@@ -57,13 +57,13 @@ const Footer = (): JSX.Element => {
               </a>
             </li>
             <li>
-              <a href="#blank" className="px-3 text-xl">
-                <i className="fab fa-linkedin-in text-gray-400" />
+              <a href="https://pinterest.com/temonggo/" className="px-3 text-xl">
+                <i className="fab fa-pinterest text-gray-400" />
               </a>
             </li>
           </ul>
           <p className="text-center font-roboto text-gray-500 mt-6">
-            <span>&copy;</span> 2020 Penguin, In. All rights reserved.
+            <span>&copy;</span> 2020 Temonggo.com. All rights reserved.
           </p>
         </div>
       </footer>

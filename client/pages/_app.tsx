@@ -12,4 +12,5 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
     </Provider>
   );
 }
+
 export default MyApp;
