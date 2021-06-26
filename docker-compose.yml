@@ -3,7 +3,7 @@ services:
     nextjs:
         build: ./client
         volumes:
-            - ./client:/usr/app
+            - ./client/res:/usr/app
     nginx:
         build: ./nginx
         ports:
