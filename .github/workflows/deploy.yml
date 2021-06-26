@@ -27,8 +27,7 @@ jobs:
           ls -la build
 
       - name: Upload artiface
-        run: ls -la
         uses: actions/upload-artifact@v2
         with:
           name: nextjs-build
-          path: build
+          path: frontend/build
