@@ -2,6 +2,8 @@ version: "3.9"
 services:
     nextjs:
         build: ./client
+        volumes:
+            - client:/usr/app
     nginx:
         build: ./nginx
         ports:
