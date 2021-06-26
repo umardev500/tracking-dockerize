@@ -17,6 +17,7 @@ jobs:
 
       - name: Building
         run: |
+          mkdir build
           node -v
           yarn -v
           ls -la
@@ -27,7 +28,6 @@ jobs:
           ls -la build
 
       - name: Upload artiface
-        if: success()
         uses: actions/upload-artifact@v2
         with:
           name: nextjs-build
