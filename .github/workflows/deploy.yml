@@ -1,14 +1,9 @@
 name: Deploy
 
-on:
-  push:
-    branches:
-      - "**"
-  workflow_dispatch:
+on: [push]
 
 jobs:
   build:
-    if: ${{ github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
 
     steps:
@@ -32,16 +27,8 @@ jobs:
           ls -la build
 
       - name: Upload artiface
+        run: ls -la
         uses: actions/upload-artifact@v2
         with:
           name: nextjs-build
           path: build
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: nextjs-build
