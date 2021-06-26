@@ -53,8 +53,8 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          source: "./static"
-          target: "/var/www"
+          source: "./*"
+          target: "~/.cicd"
 
       - name: Deploy to server
         uses: appleboy/ssh-action@master
