@@ -17,9 +17,6 @@ jobs:
 
       - name: Building
         run: |
-          mkdir build
-          echo hello > build/world.txt
-          ls build
           node -v
           yarn -v
           ls -la
@@ -33,4 +30,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: nextjs-build
-          path: build
+          path: '~/build/**/*'
