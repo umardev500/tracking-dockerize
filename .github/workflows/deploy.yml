@@ -26,8 +26,29 @@ jobs:
           ls -la
           ls -la build
 
-      - name: Upload artiface
+      - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
           name: nextjs-build
           path: ${{ github.workspace }}/client/build
+
+  deploy:
+    - name: Download artifact
+      uses: actions/download-artifact@v2
+      with:
+        name: nextjs-build
+
+    - name: Listing
+      run: |
+        ls -la
+
+    - name: Deploy to server
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        port: ${{ secrets.PORT }}
+        key: ${{ secrets.SSHKEY }}
+        script: |
+          cd /home/bangmimin/webapps/temonggoweb/tracking/tracking-dockerize
+          ls -la
