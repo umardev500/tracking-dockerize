@@ -24,6 +24,7 @@ jobs:
           yarn install
           yarn build
           ls -la
+          ls -la build
 
       - name: Upload artiface
         uses: actions/upload-artifact@v2
