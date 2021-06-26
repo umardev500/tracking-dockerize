@@ -37,8 +37,8 @@ jobs:
     steps:
       - name: Download artiface
         uses: actions/download-artifact@v2
-          with:
-            name: nextjs-build
+        with:
+          name: nextjs-build
 
       - name: Listing
         run: |
