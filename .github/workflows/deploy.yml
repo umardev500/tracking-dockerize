@@ -20,5 +20,6 @@ jobs:
           node -v
           yarn -v
           ls -la
+          cd client
           yarn install
           yarn build
