@@ -15,7 +15,10 @@ jobs:
         with:
           node-version: '12'
 
-      - name: Check node and yarn
+      - name: Building
         run: |
           node -v
           yarn -v
+          yarn install
+          yarn build
+          ls -la
