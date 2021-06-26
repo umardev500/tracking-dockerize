@@ -19,6 +19,4 @@ jobs:
         run: |
           node -v
           yarn -v
-          yarn install
-          yarn build
           ls -la
