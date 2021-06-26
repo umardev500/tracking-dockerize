@@ -5,6 +5,7 @@ RUN yarn --version
 RUN npm install --global pm2
 COPY ./package*.json ./
 COPY ./ ./
+RUN ls -la
 RUN yarn install
 RUN yarn build
 EXPOSE 3000
