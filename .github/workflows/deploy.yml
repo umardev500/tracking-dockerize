@@ -18,6 +18,8 @@ jobs:
       - name: Building
         run: |
           mkdir build
+          echo hello > build/world.txt
+          ls build
           node -v
           yarn -v
           ls -la
