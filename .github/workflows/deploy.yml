@@ -55,7 +55,7 @@ jobs:
           KEY: ${{ secrets.SSHKEY }}
         with:
           source: "."
-          target: "~/.cicd"
+          target: "/var/www"
 
       - name: Deploy to server
         uses: appleboy/ssh-action@master
