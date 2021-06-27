@@ -26,12 +26,12 @@ jobs:
           ls -la
           ls -la build
 
-      - name: Build dumy
-        run: |
-          cd client
-          mkdir build
-          cd build
-          echo hello > world.txt
+      # - name: Build dumy
+      #   run: |
+      #     cd client
+      #     mkdir build
+      #     cd build
+      #     echo hello > world.txt
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
