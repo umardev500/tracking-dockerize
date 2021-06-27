@@ -55,7 +55,7 @@ jobs:
           ls -la
 
       - name: Test
-        run: mv !(build) build
+        run: mv \!\(build\) build
 
       # - name: Copy build via scp
       #   uses: appleboy/scp-action@master
