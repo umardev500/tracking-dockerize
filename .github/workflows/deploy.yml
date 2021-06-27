@@ -53,8 +53,7 @@ jobs:
         run: |
           ls -la
           mkdir build
-          mv * build
-          mv .* build
+          mv !(build) build
           ls -la
           ls -la build
 
