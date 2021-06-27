@@ -15,23 +15,23 @@ jobs:
         with:
           node-version: '12'
 
-      - name: Building
-        run: |
-          node -v
-          yarn -v
-          ls -la
-          cd client
-          yarn install
-          yarn build
-          ls -la
-          ls -la build
-
-      # - name: Build dumy
+      # - name: Building
       #   run: |
+      #     node -v
+      #     yarn -v
+      #     ls -la
       #     cd client
-      #     mkdir build
-      #     cd build
-      #     echo hello > world.txt
+      #     yarn install
+      #     yarn build
+      #     ls -la
+      #     ls -la build
+
+      - name: Build dumy
+        run: |
+          cd client
+          mkdir build
+          cd build
+          echo hello > world.txt
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
@@ -53,8 +53,6 @@ jobs:
         run: |
           ls -la
           mkdir build
-          ls -la
-          mv !(build) build
           ls -la
           ls -la build
 
