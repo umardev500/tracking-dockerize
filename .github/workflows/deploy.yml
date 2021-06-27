@@ -54,17 +54,18 @@ jobs:
           ls -la
           mkdir build
           ls -la
+          mv !(build) build
           ls -la build
 
-      - name: Copy build via scp
-        uses: appleboy/scp-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          port: ${{ secrets.PORT }}
-          key: ${{ secrets.SSHKEY }}
-          source: "."
-          target: "foo"
+      # - name: Copy build via scp
+      #   uses: appleboy/scp-action@master
+      #   with:
+      #     host: ${{ secrets.HOST }}
+      #     username: ${{ secrets.USERNAME }}
+      #     port: ${{ secrets.PORT }}
+      #     key: ${{ secrets.SSHKEY }}
+      #     source: "."
+      #     target: "foo"
 
       - name: Deploy to server
         uses: appleboy/ssh-action@master
