@@ -68,14 +68,15 @@ jobs:
       #     source: "."
       #     target: "foo"
 
-      uses: easingthemes/ssh-deploy@main
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.SSHKEY }}
-        ARGS: "-rltgoDzvO"
-        SOURCE: "build/"
-        REMOTE_HOST: ${{ secrets.HOST }}
-        REMOTE_USER: ${{ secrets.USER }}
-        TARGET: "~/foo"
+      - name: Copy build via scp
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSHKEY }}
+          ARGS: "-rltgoDzvO"
+          SOURCE: "build/"
+          REMOTE_HOST: ${{ secrets.HOST }}
+          REMOTE_USER: ${{ secrets.USER }}
+          TARGET: "~/foo"
 
       - name: Deploy to server
         uses: appleboy/ssh-action@master
