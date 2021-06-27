@@ -73,10 +73,10 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSHKEY }}
           ARGS: "-rltgoDzvO"
-          SOURCE: "build/"
+          SOURCE: "."
           REMOTE_HOST: ${{ secrets.HOST }}
           REMOTE_USER: ${{ secrets.USERNAME }}
-          TARGET: "~/foo"
+          TARGET: "foo"
 
       - name: Deploy to server
         uses: appleboy/ssh-action@master
