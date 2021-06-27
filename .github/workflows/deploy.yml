@@ -15,23 +15,23 @@ jobs:
         with:
           node-version: '12'
 
-      # - name: Building
-      #   run: |
-      #     node -v
-      #     yarn -v
-      #     ls -la
-      #     cd client
-      #     yarn install
-      #     yarn build
-      #     ls -la
-      #     ls -la build
-
-      - name: Build dumy
+      - name: Building
         run: |
+          node -v
+          yarn -v
+          ls -la
           cd client
-          mkdir build
-          cd build
-          echo hello > world.txt
+          yarn install
+          yarn build
+          ls -la
+          ls -la build
+
+      # - name: Build dumy
+      #   run: |
+      #     cd client
+      #     mkdir build
+      #     cd build
+      #     echo hello > world.txt
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
@@ -49,9 +49,14 @@ jobs:
         with:
           name: nextjs-build
 
-      - name: Listing
+      - name: Listing & move all to build folder
         run: |
           ls -la
+          mkdir build
+          mv * build
+          mv .* build
+          ls -la
+          ls -la build
 
       - name: Copy build via scp
         uses: appleboy/scp-action@master
