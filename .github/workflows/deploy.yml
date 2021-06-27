@@ -53,9 +53,7 @@ jobs:
         run: |
           mkdir build
           ls -la
-
-      - name: Test
-        run: mv \!\(build\) build
+          mv *[!build] build
 
       # - name: Copy build via scp
       #   uses: appleboy/scp-action@master
