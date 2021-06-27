@@ -30,6 +30,7 @@ jobs:
         run: |
           cd client
           mkdir build
+          cd build
           echo hello > world.txt
 
       - name: Upload artifact
