@@ -51,9 +51,10 @@ jobs:
 
       - name: Listing
         run: |
-          mkdir build
           ls -la
-          mv *[!build] build
+          mkdir /tmp/build
+          mv * /tmp/build
+          mv /tmp/build ./
           ls -la
           ls build
 
