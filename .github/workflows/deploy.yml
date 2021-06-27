@@ -67,13 +67,13 @@ jobs:
       #     key: ${{ secrets.SSHKEY }}
       #     source: "."
       #     target: "foo"
-      - name: Adding Known Hosts
-        run: ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
-        
       - name: Install SSH Key
         uses: shimataro/ssh-key-action@v2
         with:
           key: ${{ secrets.SSHKEY }} 
+
+      - name: Adding Known Hosts
+        run: ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
 
       - name: Copy build via scp
         run: |
