@@ -44,7 +44,7 @@ const Header = (): JSX.Element => {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
-                <img className="h-8 w-8" src={`/tracking/tailwind.svg`} alt="Workflow" />
+                <img className="h-8 w-8" src={`/tracking/icon.svg`} alt="Workflow" />
                 <h5 className="text-black text-opacity-80 font-medium ml-4 text-lg">Tailwind</h5>
               </div>
             </div>
