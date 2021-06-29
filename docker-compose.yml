@@ -4,6 +4,7 @@ services:
         build: ./client
         volumes:
             - ./client/build:/usr/app/build
+            - ./client/public:/usr/app/public
     nginx:
         build: ./nginx
         ports:
