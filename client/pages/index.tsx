@@ -15,20 +15,20 @@ const HomePage = (): JSX.Element => {
           <div className="col-span-2">
             <div className="py-5">
               <div className="pb-4 pt-1">
-                <h1 className="text-3xl font-bold text-gray-800 font-roboto">Welcome to Tailwind</h1>
-                <p className="mt-1 text-lg text-gray-600 font-roboto">Lorem ipsum dolor is amet, consectetur adipisicing elit</p>
+                <h1 className="text-3xl font-bold text-gray-800 font-roboto">Cek Resi dan Ongkir</h1>
+                <p className="mt-1 text-lg text-gray-600 font-roboto">Lihat ongkir dan status paket dari ekspedisi Indonesia</p>
               </div>
             </div>
-            <p className="font-roboto">Applications</p>
+            <p className="font-roboto">Pilih Aplikasi</p>
 
             <div className="mt-5">
               <div className="grid grid-cols-2">
                 <div className="col-span-2 lg:col-span-1 mb-3 lg:mb-0">
                   <Link href="/cek-resi">
-                    <a href="/cek-resi">
+                    <a href="/tracking/cek-resi">
                       <div className="border p-4 rounded flex items-center lg:mr-1 hover:shadow cursor-pointer text-green-500">
                         <span className="flex items-center">
-                          <i className="fas fa-cube text-2xl" />
+                          <i className="fas fa-barcode text-2xl" />
                         </span>
                         <span className="ml-3 font-medium">CEK RESI</span>
                       </div>
@@ -38,10 +38,10 @@ const HomePage = (): JSX.Element => {
 
                 <div className="col-span-2 lg:col-span-1">
                   <Link href="/cek-ongkir">
-                    <a href="/cek-ongkir">
+                    <a href="/tracking/cek-ongkir">
                       <div className="border p-4 rounded flex items-center lg:ml-1 hover:shadow cursor-pointer text-green-500">
                         <span className="flex items-center">
-                          <i className="fas fa-plane text-2xl" />
+                          <i className="fas fa-truck text-2xl" />
                         </span>
                         <span className="ml-3 font-medium">CEK ONGKIR</span>
                       </div>

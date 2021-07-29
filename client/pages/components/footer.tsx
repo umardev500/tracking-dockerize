@@ -42,23 +42,28 @@ const Footer = (): JSX.Element => {
           </ul>
           <ul className="flex justify-center mt-5">
             <li>
-              <a href="#blank" className="px-3 text-xl">
+              <a href="https://facebook.com/temonggo/" className="px-3 text-xl">
                 <i className="fab fa-facebook text-gray-400" />
               </a>
             </li>
             <li>
-              <a href="#blank" className="px-3 text-xl">
+              <a href="https://instagram.com/temonggo/" className="px-3 text-xl">
                 <i className="fab fa-instagram text-gray-400" />
               </a>
             </li>
             <li>
-              <a href="#blank" className="px-3 text-xl">
+              <a href="https://twitter.com/temonggocom/" className="px-3 text-xl">
                 <i className="fab fa-twitter text-gray-400" />
               </a>
             </li>
             <li>
               <a href="https://pinterest.com/temonggo/" className="px-3 text-xl">
                 <i className="fab fa-pinterest text-gray-400" />
+              </a>
+            </li>
+             <li>
+              <a href="#blank" className="px-3 text-xl">
+                <i className="fab fa-youtube text-gray-400" />
               </a>
             </li>
           </ul>
