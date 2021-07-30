@@ -1,4 +1,4 @@
 module.exports = {
-  basePath: '/tracking',
+  basePath: '/',
   distDir: 'build',
 }
