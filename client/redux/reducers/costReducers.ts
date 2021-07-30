@@ -110,7 +110,7 @@ export const provinceReducer = (state: any = provinceInitial, action: any): any 
 const initialCourierCost: CourierModel = {
   name: 'POS Indonesia',
   value: 'pos',
-  logo: '/tracking/logos/pos.svg'
+  logo: '/logos/pos.svg'
 };
 
 export const courierCostReducer = (state: CourierModel = initialCourierCost, action: any): any => {

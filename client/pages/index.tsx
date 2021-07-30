@@ -25,7 +25,7 @@ const HomePage = (): JSX.Element => {
               <div className="grid grid-cols-2">
                 <div className="col-span-2 lg:col-span-1 mb-3 lg:mb-0">
                   <Link href="/cek-resi">
-                    <a href="/tracking/cek-resi">
+                    <a href="/cek-resi">
                       <div className="border p-4 rounded flex items-center lg:mr-1 hover:shadow cursor-pointer text-green-500">
                         <span className="flex items-center">
                           <i className="fas fa-barcode text-2xl" />
@@ -38,7 +38,7 @@ const HomePage = (): JSX.Element => {
 
                 <div className="col-span-2 lg:col-span-1">
                   <Link href="/cek-ongkir">
-                    <a href="/tracking/cek-ongkir">
+                    <a href="/cek-ongkir">
                       <div className="border p-4 rounded flex items-center lg:ml-1 hover:shadow cursor-pointer text-green-500">
                         <span className="flex items-center">
                           <i className="fas fa-truck text-2xl" />

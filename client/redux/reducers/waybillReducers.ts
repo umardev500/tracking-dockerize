@@ -3,7 +3,7 @@ import { CourierModel } from '../../models/courier';
 const initialSate: CourierModel = {
   name: 'POS Indonesia',
   value: 'pos',
-  logo: '/tracking/logos/pos.svg'
+  logo: '/logos/pos.svg'
 };
 
 export type Action = { type: 'CHANGE_COURIER'; payload: CourierModel };
