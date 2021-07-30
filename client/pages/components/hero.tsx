@@ -23,7 +23,7 @@ const Hero = (props: HeroProps): JSX.Element => {
 
       {/* Ads */}
       <div className="flex justify-center mt-4">
-        <img src="/tracking/images/ads.png" alt="ads" className="object-cover" />
+        <img src="/images/ads.png" alt="ads" className="object-cover" />
       </div>
     </div>
   );

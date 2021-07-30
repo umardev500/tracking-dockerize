@@ -44,7 +44,7 @@ const Header = (): JSX.Element => {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
-                <img className="h-8 w-8" src={`/tracking/icon.svg`} alt="Workflow" />
+                <img className="h-8 w-8" src={`/icon.svg`} alt="Workflow" />
                 <h5 className="text-black text-opacity-80 font-medium ml-4 text-lg">Temonggo.com</h5>
               </div>
             </div>
@@ -52,17 +52,17 @@ const Header = (): JSX.Element => {
             <div className="hidden lg:block">
               <div className="ml-10 flex items-center space-x-4">
                 <Link href="/">
-                  <a href="/tracking" className="text-gray-600 hover:text-black font-roboto px-2">
+                  <a href="" className="text-gray-600 hover:text-black font-roboto px-2">
                     Home
                   </a>
                 </Link>
                 <Link href="/cek-resi">
-                  <a href="/tracking/cek-resi" className="text-gray-600 hover:text-black font-roboto px-2">
+                  <a href="/cek-resi" className="text-gray-600 hover:text-black font-roboto px-2">
                     Cek resi
                   </a>
                 </Link>
                 <Link href="/cek-ongkir">
-                  <a href="/tracking/cek-ongkir" className="text-gray-600 hover:text-black font-roboto px-2">
+                  <a href="/cek-ongkir" className="text-gray-600 hover:text-black font-roboto px-2">
                     Cek ongkir
                   </a>
                 </Link>
@@ -71,7 +71,7 @@ const Header = (): JSX.Element => {
                 </a>
                 {isLogin ? (
                   <Link href="/auth/logout">
-                    <a href="/tracking/auth/logout" onClick={handleLogout} className="text-gray-600 hover:text-black font-roboto px-2">
+                    <a href="/auth/logout" onClick={handleLogout} className="text-gray-600 hover:text-black font-roboto px-2">
                       Logout
                     </a>
                   </Link>
@@ -94,17 +94,17 @@ const Header = (): JSX.Element => {
           <div className="lg:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link href="/">
-                <a href="/tracking" className="hover:bg-gray-100 text-gray-700 block px-3 py-2 rounded-md text-base font-medium font-roboto">
+                <a href="" className="hover:bg-gray-100 text-gray-700 block px-3 py-2 rounded-md text-base font-medium font-roboto">
                   Home
                 </a>
               </Link>
               <Link href="/cek-resi">
-                <a href="/tracking/cek-resi" className="hover:bg-gray-100 text-gray-700 block px-3 py-2 rounded-md text-base font-medium font-roboto">
+                <a href="/cek-resi" className="hover:bg-gray-100 text-gray-700 block px-3 py-2 rounded-md text-base font-medium font-roboto">
                   Cek resi
                 </a>
               </Link>
               <Link href="/cek-ongkir">
-                <a href="/tracking/cek-ongkir" className="hover:bg-gray-100 text-gray-700 block px-3 py-2 rounded-md text-base font-medium font-roboto">
+                <a href="/cek-ongkir" className="hover:bg-gray-100 text-gray-700 block px-3 py-2 rounded-md text-base font-medium font-roboto">
                   Cek ongkir
                 </a>
               </Link>

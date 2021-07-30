@@ -15,26 +15,26 @@ const Footer = (): JSX.Element => {
           <ul className="flex justify-center flex-wrap">
             <li>
               <Link href="/about">
-                <a href="/tracking/about" className="text-gray-500 font-roboto px-4 mb-2 inline-flex">
+                <a href="/about" className="text-gray-500 font-roboto px-4 mb-2 inline-flex">
                   About
                 </a>
               </Link>
             </li>
             <li>
-              <a onClick={openModal} href="/tracking/contact" className="text-gray-500 font-roboto px-4 mb-2 inline-flex">
+              <a onClick={openModal} href="/contact" className="text-gray-500 font-roboto px-4 mb-2 inline-flex">
                 Contact
               </a>
             </li>
             <li>
               <Link href="/cek-resi">
-                <a href="/tracking/cek-resi" className="text-gray-500 font-roboto px-4 mb-2 inline-flex whitespace-nowrap">
+                <a href="/cek-resi" className="text-gray-500 font-roboto px-4 mb-2 inline-flex whitespace-nowrap">
                   Cek Resi
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/cek-ongkir">
-                <a href="/tracking/cek-ongkir" className="text-gray-500 font-roboto px-4 mb-2 inline-flex whitespace-nowrap">
+                <a href="/cek-ongkir" className="text-gray-500 font-roboto px-4 mb-2 inline-flex whitespace-nowrap">
                   Cek Ongkir
                 </a>
               </Link>
