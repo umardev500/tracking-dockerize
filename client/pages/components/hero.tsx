@@ -1,4 +1,5 @@
 import { useRouter } from 'next/dist/client/router';
+import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { AppState } from '../../redux/reducers';
 // import Script from 'next/script';
@@ -8,10 +9,15 @@ export type HeroProps = {
   description?: string;
 };
 
+
 const Hero = (props: HeroProps): JSX.Element => {
   const router = useRouter();
   const courier = useSelector((state: AppState) => state.courier);
   const { title, description } = props;
+
+  useEffect(() => {
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+  }, []);
 
   return (
     <div className="py-5">
