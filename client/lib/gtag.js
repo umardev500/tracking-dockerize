@@ -8,11 +8,11 @@ export const pageview = (url) => {
   })
 }
 
-export const ad = () => {
-  if (typeof window !== 'undefined') {
-    (window.adsbygoogle = window.adsbygoogle || []).push({});
-  }
-}
+// export const ad = () => {
+//   if (typeof window !== 'undefined') {
+//     (window.adsbygoogle = window.adsbygoogle || []).push({});
+//   }
+// }
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/events
 export const event = ({ action, category, label, value }) => {
