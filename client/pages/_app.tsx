@@ -12,6 +12,8 @@ import Script from 'next/script';
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   const router = useRouter();
   useEffect(() => {
+    console.log('mounted');
+    
     const handleRouteChange = (url: any) => {
       gtag.pageview(url)
     }
