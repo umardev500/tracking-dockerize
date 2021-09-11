@@ -30,6 +30,9 @@ const Hero = (props: HeroProps): JSX.Element => {
           data-ad-slot="7208868817"
           data-ad-format="auto"
           data-full-width-responsive="true" />
+        <Script onLoad={() => {
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        }} />
       </div>
       
     </div>
