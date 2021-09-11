@@ -7,6 +7,7 @@ import { store } from '../redux/store';
 // tes
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
+    // test comment
     <Provider store={store}>
       <Component {...pageProps} />
     </Provider>
