@@ -9,4 +9,4 @@ RUN ls -la
 RUN yarn install
 EXPOSE 3000
 USER root
-CMD [ "pm2-runtime", "yarn dev" ]
+CMD [ "pm2-runtime", "npm", "--", "start" ]
