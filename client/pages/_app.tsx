@@ -14,9 +14,12 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   useEffect(() => {
     console.log('mounted');
     var ads = document.getElementsByClassName("adsbygoogle").length;
+    console.log(ads);
     for (var i = 0; i < ads; i++) {
       try {
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
+        if (typeof window !== 'undefined') {
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+        }
       } catch (e) { }
     }
     
