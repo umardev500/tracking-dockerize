@@ -2,6 +2,8 @@ import { useRouter } from 'next/dist/client/router';
 import { useSelector } from 'react-redux';
 import { AppState } from '../../redux/reducers';
 import Script from 'next/script';
+import * as gtag from '../../lib/gtag';
+import { useEffect } from 'react';
 
 export type HeroProps = {
   title: string;
@@ -12,6 +14,10 @@ const Hero = (props: HeroProps): JSX.Element => {
   const router = useRouter();
   const courier = useSelector((state: AppState) => state.courier);
   const { title, description } = props;
+
+  useEffect(() => {
+    gtag.ad();
+  });
 
   return (
     <div className="py-5">
@@ -30,9 +36,6 @@ const Hero = (props: HeroProps): JSX.Element => {
           data-ad-slot="7208868817"
           data-ad-format="auto"
           data-full-width-responsive="true" />
-        <Script onLoad={() => {
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        }} />
       </div>
       
     </div>

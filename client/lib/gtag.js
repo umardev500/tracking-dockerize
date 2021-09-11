@@ -10,6 +10,8 @@ export const pageview = (url) => {
 
 export const ad = () => {
   (adsbygoogle = window.adsbygoogle || []).push({});
+  console.log(adsbygoogle);
+  console.log('ended');
 }
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/events
