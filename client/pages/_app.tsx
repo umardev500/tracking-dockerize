@@ -22,6 +22,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   }, [router.events]);
 
   return (
+    // test comment
     <Provider store={store}>
       <Script
         strategy="afterInteractive"
