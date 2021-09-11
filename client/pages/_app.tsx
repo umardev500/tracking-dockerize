@@ -13,6 +13,12 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   const router = useRouter();
   useEffect(() => {
     console.log('mounted');
+    var ads = document.getElementsByClassName("adsbygoogle").length;
+    for (var i = 0; i < ads; i++) {
+      try {
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (e) { }
+    }
     
     const handleRouteChange = (url: any) => {
       gtag.pageview(url);

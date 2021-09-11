@@ -13,10 +13,6 @@ const Hero = (props: HeroProps): JSX.Element => {
   const courier = useSelector((state: AppState) => state.courier);
   const { title, description } = props;
 
-  const foo = () => {
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  }
-
   return (
     <div className="py-5">
       <div className="pb-4 pt-1">
@@ -27,14 +23,12 @@ const Hero = (props: HeroProps): JSX.Element => {
       </div>
 
       <div style={{ minHeight: 300, minWidth: '100%' }} className="block">
-        {/*<Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3737625529587380" crossOrigin="anonymous" />*/}
         <ins className="adsbygoogle"
           style={{display: 'block'}}
           data-ad-client="ca-pub-3737625529587380"
           data-ad-slot="7208868817"
           data-ad-format="auto"
           data-full-width-responsive="true" />
-        {foo()}
       </div>
       
     </div>
