@@ -24,9 +24,10 @@ const Hero = (props: HeroProps): JSX.Element => {
 
       <div style={{ minHeight: 300, minWidth: '100%' }} className="block">
         <ins className="adsbygoogle"
-          style={{display: 'block'}}
+          style={{display: 'block', minHeight: 300, minWidth: 500}}
           data-ad-client="ca-pub-3737625529587380"
           data-ad-slot="7208868817"
+          data-adtest="on"
           data-ad-format="auto"
           data-full-width-responsive="true" />
       </div>
