@@ -1,6 +1,7 @@
 import { useRouter } from 'next/dist/client/router';
 import { useSelector } from 'react-redux';
 import { AppState } from '../../redux/reducers';
+import Script from 'next/script';
 
 export type HeroProps = {
   title: string;
@@ -19,6 +20,16 @@ const Hero = (props: HeroProps): JSX.Element => {
           {title} {router.query && router.query.courier ? courier.name : null}
         </h1>
         <p className="mt-1 text-lg text-gray-600 font-roboto">{description}</p>
+      </div>
+
+      <div style={{ minHeight: 300, minWidth: '100%' }} className="block">
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3737625529587380" crossOrigin="anonymous" />
+        <ins className="adsbygoogle"
+          style={{display: 'block'}}
+          data-ad-client="ca-pub-3737625529587380"
+          data-ad-slot="7208868817"
+          data-ad-format="auto"
+          data-full-width-responsive="true" />
       </div>
       
     </div>

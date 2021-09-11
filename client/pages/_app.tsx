@@ -15,7 +15,8 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
     console.log('mounted');
     
     const handleRouteChange = (url: any) => {
-      gtag.pageview(url)
+      gtag.pageview(url);
+      gtag.ad();
     }
     router.events.on('routeChangeComplete', handleRouteChange)
     return () => {

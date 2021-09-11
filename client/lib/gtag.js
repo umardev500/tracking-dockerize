@@ -8,6 +8,10 @@ export const pageview = (url) => {
   })
 }
 
+export const ad = () => {
+  (adsbygoogle = window.adsbygoogle || []).push({});
+}
+
 // https://developers.google.com/analytics/devguides/collection/gtagjs/events
 export const event = ({ action, category, label, value }) => {
   window.gtag('event', action, {
