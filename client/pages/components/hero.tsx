@@ -29,7 +29,7 @@ const Hero = (props: HeroProps): JSX.Element => {
       </div>
 
       <div style={{ height: 200 }} className="block w-full p-4">
-        <ins className="adsbygoogle"
+        <ins className="adsbygoogle p-4"
           style={{display: 'block',}}
           data-ad-client="ca-pub-3737625529587380"
           data-ad-slot="7208868817"
