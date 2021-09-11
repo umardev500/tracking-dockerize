@@ -1,9 +1,7 @@
 import { useRouter } from 'next/dist/client/router';
 import { useSelector } from 'react-redux';
 import { AppState } from '../../redux/reducers';
-import Script from 'next/script';
-import * as gtag from '../../lib/gtag';
-import { useEffect } from 'react';
+// import Script from 'next/script';
 
 export type HeroProps = {
   title: string;
@@ -15,10 +13,6 @@ const Hero = (props: HeroProps): JSX.Element => {
   const courier = useSelector((state: AppState) => state.courier);
   const { title, description } = props;
 
-  useEffect(() => {
-    gtag.ad();
-  });
-
   return (
     <div className="py-5">
       <div className="pb-4 pt-1">
@@ -29,13 +23,16 @@ const Hero = (props: HeroProps): JSX.Element => {
       </div>
 
       <div style={{ minHeight: 300, minWidth: '100%' }} className="block">
-        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3737625529587380" crossOrigin="anonymous" />
+        {/*<Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3737625529587380" crossOrigin="anonymous" />*/}
         <ins className="adsbygoogle"
           style={{display: 'block'}}
           data-ad-client="ca-pub-3737625529587380"
           data-ad-slot="7208868817"
           data-ad-format="auto"
           data-full-width-responsive="true" />
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
       </div>
       
     </div>

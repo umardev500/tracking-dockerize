@@ -31,6 +31,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
         async
         src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
       />
+      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3737625529587380" crossOrigin="anonymous" />
       <Script
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
