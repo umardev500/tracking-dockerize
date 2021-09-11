@@ -20,22 +20,7 @@ const Hero = (props: HeroProps): JSX.Element => {
         </h1>
         <p className="mt-1 text-lg text-gray-600 font-roboto">{description}</p>
       </div>
-
-      {/* Ads */}
-import Script from 'next/script'
-    <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3737625529587380"
-     crossorigin="anonymous"> />
-{/* <!-- Otomatis -->*/}
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3737625529587380"
-     data-ad-slot="7208868817"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<Script
-     (adsbygoogle = window.adsbygoogle || []).push({});
-/>
-      </div>
+      
     </div>
   );
 };
