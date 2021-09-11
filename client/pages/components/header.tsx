@@ -34,7 +34,7 @@ const Header = (): JSX.Element => {
     <>
       <Head>
         <meta charSet="utf-8" />
-        <meta name="description" content="Cek resi dari berbagai ekspedisi di Indonsia" />
+        <meta name="description" content="Lacak paket dari berbagai ekspedisi di Indonsia" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -45,7 +45,7 @@ const Header = (): JSX.Element => {
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
                 <img className="h-8 w-8" src={`/icon.svg`} alt="Workflow" />
-                <h5 className="text-black text-opacity-80 font-medium ml-4 text-lg">Temonggo.com</h5>
+                <h5 className="text-black text-opacity-80 font-medium ml-4 text-lg"><a href="https://bangmimin.com">Tracking Paket</a></h5>
               </div>
             </div>
 
@@ -53,7 +53,7 @@ const Header = (): JSX.Element => {
               <div className="ml-10 flex items-center space-x-4">
                 <Link href="/">
                   <a href="" className="text-gray-600 hover:text-black font-roboto px-2">
-                    Home
+                    Beranda
                   </a>
                 </Link>
                 <Link href="/cek-resi">

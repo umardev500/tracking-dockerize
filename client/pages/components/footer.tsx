@@ -21,7 +21,7 @@ const Footer = (): JSX.Element => {
               </Link>
             </li>
             <li>
-              <a onClick={openModal} href="/contact" className="text-gray-500 font-roboto px-4 mb-2 inline-flex">
+              <a onClick={openModal} href="#contact" className="text-gray-500 font-roboto px-4 mb-2 inline-flex">
                 Contact
               </a>
             </li>
@@ -42,22 +42,22 @@ const Footer = (): JSX.Element => {
           </ul>
           <ul className="flex justify-center mt-5">
             <li>
-              <a href="https://facebook.com/temonggo/" className="px-3 text-xl">
+              <a href="https://facebook.com/" className="px-3 text-xl">
                 <i className="fab fa-facebook text-gray-400" />
               </a>
             </li>
             <li>
-              <a href="https://instagram.com/temonggo/" className="px-3 text-xl">
+              <a href="https://instagram.com/" className="px-3 text-xl">
                 <i className="fab fa-instagram text-gray-400" />
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/temonggocom/" className="px-3 text-xl">
+              <a href="https://twitter.com/" className="px-3 text-xl">
                 <i className="fab fa-twitter text-gray-400" />
               </a>
             </li>
             <li>
-              <a href="https://pinterest.com/temonggo/" className="px-3 text-xl">
+              <a href="https://pinterest.com/" className="px-3 text-xl">
                 <i className="fab fa-pinterest text-gray-400" />
               </a>
             </li>
@@ -68,7 +68,7 @@ const Footer = (): JSX.Element => {
             </li>
           </ul>
           <p className="text-center font-roboto text-gray-500 mt-6">
-            <span>&copy;</span> 2020 Temonggo.com. All rights reserved.
+            <span>&copy;</span> 2021 Bangmimin.com. All rights reserved.
           </p>
         </div>
       </footer>
