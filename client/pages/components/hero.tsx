@@ -9,11 +9,6 @@ export type HeroProps = {
   description?: string;
 };
 
-interface Window {
-  adsbygoogle: {[key: string]: unknown}[]
-}
-
-
 const Hero = (props: HeroProps): JSX.Element => {
   const router = useRouter();
   const courier = useSelector((state: AppState) => state.courier);
