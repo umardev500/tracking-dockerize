@@ -28,7 +28,7 @@ const Hero = (props: HeroProps): JSX.Element => {
         <p className="mt-1 text-lg text-gray-600 font-roboto">{description}</p>
       </div>
 
-      <div style={{ height: 200 }} className="block w-full">
+      <div style={{ height: 200 }} className="block w-full p-4">
         <ins className="adsbygoogle"
           style={{display: 'block',}}
           data-ad-client="ca-pub-3737625529587380"
