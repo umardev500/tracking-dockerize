@@ -15,6 +15,7 @@ const Hero = (props: HeroProps): JSX.Element => {
   const { title, description } = props;
 
   useEffect(() => {
+    console.log('ads render');
     ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
   }, []);
 
