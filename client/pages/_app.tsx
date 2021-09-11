@@ -15,16 +15,10 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
     console.log('mounted');
     var ads = document.getElementsByClassName("adsbygoogle").length;
     console.log(ads);
-    for (var i = 0; i < ads; i++) {
-      try {
-        if (typeof window !== 'undefined') {
-          (window.adsbygoogle = window.adsbygoogle || []).push({});
-        }
-      } catch (e) { }
-    }
     
     const handleRouteChange = (url: any) => {
       gtag.pageview(url);
+      gtag.ad();
     }
     router.events.on('routeChangeComplete', handleRouteChange)
     return () => {
