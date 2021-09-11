@@ -13,6 +13,10 @@ const Hero = (props: HeroProps): JSX.Element => {
   const courier = useSelector((state: AppState) => state.courier);
   const { title, description } = props;
 
+  const foo = () => {
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  }
+
   return (
     <div className="py-5">
       <div className="pb-4 pt-1">
@@ -30,9 +34,7 @@ const Hero = (props: HeroProps): JSX.Element => {
           data-ad-slot="7208868817"
           data-ad-format="auto"
           data-full-width-responsive="true" />
-        <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+        {foo()}
       </div>
       
     </div>
